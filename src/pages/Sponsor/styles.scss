@@ -1,0 +1,56 @@
+.sponsor {
+    &__title {
+        margin-bottom: 20px;
+    }
+    &__paragraph {
+        margin-bottom: 12px;
+        padding: 0 20px;
+        line-height: 24px;
+        font-family: Roboto;
+        font-size: 22px;
+    }
+    &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 20px;
+        @media (min-width: 900px) {
+            padding: 0;
+            width: 50%;
+        }
+    }  
+    &__cc-title {
+        margin: 30px 0 15px;
+    } 
+    &--text-small {
+        line-height: unset;
+        color: #343836;
+        font-size: 16px;
+    }
+
+    &__separator {
+        border-radius: 5px;
+        background-color: #343836;
+    }
+
+    &__info {
+        line-height: 20px;
+        font-family: Roboto;
+        font-size: 16px;
+    }
+
+    &__illustration {
+        width: 100%;
+    }
+
+    &__title,
+    &__cc-title {
+        text-align: center;
+
+        @media (min-width: 900px) {
+            text-align: left;
+        }
+    }
+
+
+}

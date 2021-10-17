@@ -1,0 +1,31 @@
+.header {
+    display: flex;
+    align-items: center;
+    background-color: #4b8b3b;
+    height: 60px;
+
+    &__button {
+        border: none;
+        background-color: transparent;
+    }
+
+    &__content {
+        margin: 0 auto;
+        width: 90%;
+        max-width: 1115px;
+    }
+
+    &__logo {
+        @media (max-width: 900px){
+            position: absolute;
+            top: 8px;
+            left: calc(50% - 21px);
+        }
+    }
+
+    &--desktop-hidden {
+        @media (min-width: 900px){
+            display: none;
+        }
+    }
+}

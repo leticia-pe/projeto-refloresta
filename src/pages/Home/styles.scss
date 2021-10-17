@@ -1,0 +1,83 @@
+.home {
+
+    &__cta {
+        @media (max-width: 900px){
+            width: 90%;
+       }
+    }
+    &__banner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 auto;
+        width: 90%;
+        max-width: 1115px;
+        @media (max-width: 900px){
+        flex-direction: column;
+        }
+    }
+    &__waves {
+        bottom: 34px;
+        z-index: -1;
+        width: 100%;
+        @media (min-width: 1024px){
+            position: absolute;
+            bottom: 192px;
+        }
+        
+    }
+    &__hands {
+        z-index: 1;
+        max-height: calc(100vh - 253px);
+        @media (max-width: 900px){
+            width: 100%;
+            max-height: fit-content;
+        }
+    }
+    &__title,
+    &__title-small {
+        font-family: Acme;
+    }
+
+    &__title {
+        font-size: 64px;
+        @media (max-width: 900px){
+            font-size: 52px;
+    }
+    }
+
+    &__button {
+        z-index: 1;
+        border: none;
+        border-radius: 8px;
+        background-color: #4b8b3b;
+        cursor: pointer;
+        padding: 16px;
+        width: 320px;
+        letter-spacing: 1px;
+        color: #FFFFFF;
+        font-family: Roboto;
+        font-weight: 700;
+        @media (max-width: 900px){
+            width: 100%;
+       }
+    }
+
+    &__button:hover {
+        background-color: #69AE57;
+    }
+
+    &__logo {
+        @media (max-width: 900px){
+            margin: 36px 0;
+            width: 100%;
+        }
+    }
+
+    &__footer {
+        @media (min-width: 1024px){
+            position: absolute;
+            bottom: 0;
+        }
+    }
+}

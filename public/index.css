@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Montserrat:wght@400;600;700&display=swap');
+* {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Acme;
+}
+
+.default-h1 {
+  margin: 16px 0;
+  text-align: center;
+}
+
+.default-main {
+  margin: 0 auto;
+  max-width: 1115px;
+  min-height: calc(100vh - 325px);
+}
+
+.default-p,
+.default-li {
+  margin-bottom: 12px;
+  padding: 0 20px;
+  line-height: 20px;
+  font-family: Roboto;
+  font-size: 18px;
+}
+
+li {
+  padding: 0;
+}
+
+.default-ul {
+  padding-left: 30px;
+  width: calc(100vw - 30px);
+}
+
+.default--bold {
+  font-weight: bold;
+}
+
+.default-illustration {
+  width: 100%;
+}
+
+.default-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media (min-width: 900px) {
+  .default-main {
+    display: flex;
+    padding: 0 30px;
+  }
+
+  .default-content {
+    width: 50%;
+  }
+
+  .default-p,
+.default-li {
+  margin-bottom: 12px;
+  padding: 0 20px;
+  line-height: 24px;
+  font-family: Roboto;
+  font-size: 22px;
+}
+}
